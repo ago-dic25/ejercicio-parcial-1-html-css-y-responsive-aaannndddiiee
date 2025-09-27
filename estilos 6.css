@@ -1,0 +1,75 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.grid *{
+    grid-column: span 2;
+}
+
+[class*="card-"]{
+    background-color: #f2f0f0;
+    padding: 20px;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 20px;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    background-color: #f9e29f;
+}
+.sin-subrayado{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+main{
+    background-color: #edb3b3;
+}
+footer{
+    background-color: #fd6565;
+}
+
+@media screen and (min-width: 768px){
+    .grid .card-1{
+        grid-column: span 1;
+    }
+    .grid .card-2{
+        grid-column: span 1;
+    }
+    .grid .card-3{
+        grid-column: span 1;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .grid1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .grid1 .p{
+        grid-column: span 1;
+    }
+
+    .grid1 .img{
+        grid-column: span 1;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    } 
+    
+    .grid *{
+        grid-column: span 1;
+    }
+}
